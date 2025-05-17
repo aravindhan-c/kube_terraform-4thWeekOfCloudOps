@@ -25,7 +25,7 @@ module "NAT-GW" {
 
 
 module "IAM" {
-  source = "../modules/IAM"
+  source       = "../modules/IAM"
   PROJECT_NAME = var.PROJECT_NAME
 }
 
@@ -47,3 +47,4 @@ module "NODE_GROUP" {
   PRI_SUB_3_A_ID   = module.VPC.PRI_SUB_3_A_ID
   PRI_SUB_4_B_ID   = module.VPC.PRI_SUB_4_B_ID
 }
+
